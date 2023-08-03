@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.maincontainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.myli {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.darkmode {
+  width: 30px;
+  height: 30px;
+  background-image:url(moon-stars-fill.svg);
+  background-size: 100%,100%;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.lightmode{
+    width: 30px;
+  height: 30px;
+  background-image:url(brightness-high.svg);
+  background-size: 100%,100%;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.darkmode:hover {
+  scale: 120%;
+}
+.filter {
+  filter: invert(1);
+}
